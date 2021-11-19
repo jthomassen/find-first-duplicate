@@ -1,5 +1,11 @@
 function findFirstDuplicate(arr) {
-  // type your code here
+  const firstDuplicate = arr.filter((item, index) => arr.indexOf(item) !== index)[0]
+
+  if (firstDuplicate) {
+    return firstDuplicate
+  } else {
+    return -1
+  }
 }
 
 if (require.main === module) {
